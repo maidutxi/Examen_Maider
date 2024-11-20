@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\DentistaController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +16,7 @@ Route::delete('/dentistas/delete/{id}', [DentistaController::class, 'delete']);
 Route::put('/dentistas/update/{id}', [DentistaController::class, 'update']);
 
 
-
+Route::get('/clientes/index', [ClientesController::class,'index']);
+Route::get('/clientes/create', [ClientesController::class, 'create']);
+Route::post('/clientes/store', [ClientesController::class, 'store']);
+Route::put('/clientes/update/{id}', [ClientesController::class, 'update']);

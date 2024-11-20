@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Clientes;
+use App\Models\Cliente;
 use App\Models\Dentista;
 use Illuminate\Http\Request;
 
@@ -15,7 +15,7 @@ class DentistaController extends Controller
 
     public function edit($id){
         $dentistas = Dentista::find($id);
-        $clientes=Clientes::all();
+        $clientes=Cliente::all();
         return view('dentistas.edit', compact('clientes', 'dentistas'));
     }
 

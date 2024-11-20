@@ -20,6 +20,7 @@
         <input type="text" name="nombre" placeholder="Nombre dentista">
         <input type="text" name="apellido" placeholder="apellido dentista">
         <input type="text" name="dni" placeholder="dni dentista">
+        <label for="fecha_nacimiento">Fecha:nacimiento:</label>
         <input type="date" name="fecha_nacimiento" placeholder="fecha nacimiento dentista">
         <input type="boolean" name="en_vacaciones" placeholder="vacaciones dentista">
         <input type="submit" value="Añadir dentista">
