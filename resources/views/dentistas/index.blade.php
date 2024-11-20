@@ -10,13 +10,13 @@
     <ul>
         @foreach ($dentistas as $dentista)
             <li>
-                {{$dentista->nombre}} {{$dentista->apellido}} {{$dentista->dni}} {{$dentista->fecha_nacimiento}} {{$dentista->en_vacaciones}} 
+                {{$dentista->nombre}} {{$dentista->apellido}}  {{$dentista->dni}}   {{$dentista->fecha_nacimiento}}    {{$dentista->en_vacaciones}} 
                 <form action="/dentistas/edit/{{ $dentista->id }}" method="get" style="display:inline;">
                 @csrf
                 <button type="submit">Editar dentista</button>
                 </form>
 
-                <form action="/dentistas/delete/{{ $dentista->id }}" method="get" style="display:inline;">
+                <form action="/dentistas/delete/{{ $dentista->id }}" method="POST" style="display:inline;">
                     @csrf
                     @method('DELETE')
                     <button type="submit">Borrar dentista</button>

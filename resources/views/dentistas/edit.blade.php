@@ -32,7 +32,7 @@
     </form><br>
 
     
-    <a href="/dentistas/create">Formulario para añadir tarea</a>
-    <a href="/dentistas/index">Volver a Lista Tareas</a>
+    <a href="/dentistas/create">Formulario para añadir dentista</a>
+    <a href="/dentistas/index">Volver a Lista Dentistas</a>
 </body>
 </html>

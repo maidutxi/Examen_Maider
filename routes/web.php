@@ -12,3 +12,7 @@ Route::get('/dentistas/edit/{id}', [DentistaController::class,'edit']);
 Route::get('/dentistas/create', [DentistaController::class, 'create']);
 Route::post('/dentistas/store', [DentistaController::class, 'store']);
 Route::delete('/dentistas/delete/{id}', [DentistaController::class, 'delete']);
+Route::put('/dentistas/update/{id}', [DentistaController::class, 'update']);
+
+
+
